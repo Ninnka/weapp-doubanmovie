@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/intheater/index",
+    "pages/comingsoon/index",
+    "pages/top/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#58AA56",
+    "navigationBarTitleText": "WeChatAuslese",
+    "navigationBarTextStyle":"white"
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/intheater/index",
+      "text": "hot"
+      
+    }, {
+      "pagePath": "pages/comingsoon/index",
+      "text": "coming"
+    },{
+      "pagePath": "pages/top/index",
+      "text": "top250"
+    }],
+    "color": "white",
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor": "#129912"
+  },
+  "debug":true
+}
