@@ -1,14 +1,16 @@
 {
   "pages":[
+    "pages/home/index",
+    "pages/my/index",
     "pages/intheater/index",
-    "pages/comingsoon/index",
-    "pages/top/index"
+    "pages/comingsoon/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#58AA56",
-    "navigationBarTitleText": "WeChatAuslese",
-    "navigationBarTextStyle":"white"
+    "navigationBarTitleText": "douban movie",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
   },
   "networkTimeout": {
     "request": 20000,
@@ -16,15 +18,11 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/intheater/index",
-      "text": "hot"
-      
+      "pagePath": "pages/home/index",
+      "text": "home"
     }, {
-      "pagePath": "pages/comingsoon/index",
-      "text": "coming"
-    },{
-      "pagePath": "pages/top/index",
-      "text": "top250"
+      "pagePath": "pages/my/index",
+      "text": "my"
     }],
     "color": "white",
     "position": "bottom",

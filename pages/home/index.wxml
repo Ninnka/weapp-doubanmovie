@@ -1,0 +1,78 @@
+<!--pages/intheater/index.wxml-->
+<!--<text>pages/intheater/index.wxml</text>-->
+<view class="root">
+
+    <view class="home-title">
+      豆瓣电影
+    </view>
+    <view class="intheaters-banner-wrapper banner-wrapper">
+      <view class="banner-guide">
+        <text class="banner-title">正在热映</text>
+        <text class="banner-more" catchtap="more" data-filmtype="intheaters">查看更多</text>
+      </view>
+      
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+
+            <swiper-item wx:for="{{inTheatersBannerItem}}">
+              <view class="image-wrapper" catchtap="filmDetail" id="{{item[0].id}}">
+                <image src="{{item[0].imgUrl}}" class="slide-image"/>
+                <text class="slide-image-title">{{item[0].imgTitle}}</text>
+              </view>
+              <view class="image-wrapper" catchtap="filmDetail" id="{{item[1].id}}">
+                <image src="{{item[1].imgUrl}}" class="slide-image"/>
+                <text class="slide-image-title">{{item[1].imgTitle}}</text>
+              </view>
+              <view class="image-wrapper" catchtap="filmDetail" id="{{item[2].id}}">
+                <image src="{{item[2].imgUrl}}" class="slide-image"/>
+                <text class="slide-image-title">{{item[2].imgTitle}}</text>
+              </view>
+            </swiper-item>
+          
+        </swiper>
+    </view>
+
+    <view class="commingsoon-banner-wrapper banner-wrapper">
+      <view class="banner-guide">
+        <text class="banner-title">即将上映</text>
+        <text class="banner-more" catchtap="more" data-filmtype="comingsoon">查看更多</text>
+      </view>
+
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+
+          <swiper-item wx:for="{{commingsoonBannerItem}}">
+            <view class="image-wrapper" catchtap="filmDetail" id="{{item[0].id}}">
+              <image src="{{item[0].imgUrl}}" class="slide-image"/>
+              <text class="slide-image-title">{{item[0].imgTitle}}</text>
+            </view>
+            <view class="image-wrapper" catchtap="filmDetail" id="{{item[1].id}}">
+              <image src="{{item[1].imgUrl}}" class="slide-image"/>
+              <text class="slide-image-title">{{item[1].imgTitle}}</text>
+            </view>
+            <view class="image-wrapper" catchtap="filmDetail" id="{{item[2].id}}">
+              <image src="{{item[2].imgUrl}}" class="slide-image"/>
+              <text class="slide-image-title">{{item[2].imgTitle}}</text>
+            </view>
+          </swiper-item>
+
+      </swiper>
+    </view>
+
+    <view class="top250">
+      <view class="top250-title">
+        <view class="line"></view>
+        豆瓣电影top250
+        <view class="line"></view>
+      </view>
+      <view class="top250-content">
+        <view class="top250-item" wx:for="{{topContentList}}">
+          <view class="top250-item-wrapper" catchtap="filmDetail" id="{{item.id}}">
+            <image src="{{item.images.medium}}" class="top250-item-image"></image>
+            <view class="top250-item-title">{{item.title}}</view>
+            <view class="top250-item-ratingaverage">评分：{{item.rating.average}}</view>
+          </view>
+          
+        </view>
+      </view>
+    </view>
+    
+</view>

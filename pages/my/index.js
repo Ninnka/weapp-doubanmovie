@@ -1,4 +1,4 @@
-// pages/top/index.js
+// pages/my/index.js
 Page({
   data:{},
   onLoad:function(options){

@@ -1,0 +1,107 @@
+/* pages/intheater/index.wxss */
+.home-title{
+    line-height: 40px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 6px;
+}
+.banner-wrapper{
+    margin-bottom: 18px;
+}
+swiper{
+    height: 210px;
+    font-size: 0px;
+    background: rgb(247, 247, 247);
+}
+.swiper{
+    font-size: 0px;
+}
+.image-wrapper{
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    margin-left: 2.5%;
+    text-align: center;
+}
+.slide-image{
+    width: 100%;
+    height: 80%;
+    vertical-align: top;
+}
+.slide-image-title{
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 6px;
+}
+.banner-guide{
+    height: 30px;
+    font-size: 14px;
+}
+.banner-title{
+    top: 10px;
+    left: 10px;
+    position: relative;
+}
+.banner-more{
+    top: 10px;
+    text-decoration: underline;
+    position: relative;
+    left: 66%;
+}
+
+.top250{
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
+}
+.top250 view{
+    vertical-align: middle;
+}
+.top250-title{
+    text-align: center;
+    font-size: 17px;
+    color: #343434;
+    display: inline-block;
+}
+.top250 .line{
+    height: 1px;
+    width: 20px;
+    background: #129912;
+    margin: 0 12px;
+    display: inline-block;
+}
+.top250-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 0px;
+}
+.top250-item{
+    background: white;
+    flex-basis: 31%;
+    height: 180px;
+    margin: 2% 1%;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0px 0px 1px 1px #F9F9F9;
+}
+.top250-item-wrapper{
+    height: 100%;
+}
+.top250-item-image{
+    width: 80%;
+    height: 70%;
+}
+.top250-item-wrapper view{
+    padding: 4px;
+}
+.top250-item-title{
+    max-width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

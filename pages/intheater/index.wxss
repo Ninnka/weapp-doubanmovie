@@ -1,10 +1,1 @@
 /* pages/intheater/index.wxss */
-.swiper{
-    font-size: 0px;
-}
-.slide-image{
-    width: 30%;
-    height: 100%;
-    margin-left: 2.5%;
-    vertical-align: bottom;
-}
