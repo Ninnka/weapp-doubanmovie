@@ -175,6 +175,8 @@ Page({
     // console.log(event);
     let filmtype = event.target.dataset.filmtype;
     console.log(filmtype);
+    let id = event.currentTarget.id;
+    console.log(id);
     switch(filmtype){
       case "intheaters":
         wx.navigateTo({
@@ -189,6 +191,7 @@ Page({
           },
           complete: function() {
             // complete
+            console.log("complete");
           }
         });
         break;
@@ -205,6 +208,7 @@ Page({
           },
           complete: function() {
             // complete
+            console.log("complete");
           }
         });
         break;
@@ -213,6 +217,20 @@ Page({
   filmDetail(event){
     let id = event.currentTarget.id;
     console.log(id);
-
+    wx.navigateTo({
+      url: '../subject/index?itemid='+id,
+      success: function(res){
+        // success
+        console.log("success");
+      },
+      fail: function() {
+        // fail
+        console.log("fail");
+      },
+      complete: function() {
+        // complete
+        console.log("complete");
+      }
+    })
   }
 })

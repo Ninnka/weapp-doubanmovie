@@ -3,12 +3,13 @@
     "pages/home/index",
     "pages/my/index",
     "pages/intheater/index",
-    "pages/comingsoon/index"
+    "pages/comingsoon/index",
+    "pages/subject/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#58AA56",
-    "navigationBarTitleText": "douban movie",
+    "navigationBarTitleText": "豆瓣电影",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },
@@ -24,10 +25,10 @@
       "pagePath": "pages/my/index",
       "text": "my"
     }],
-    "color": "white",
+    "color": "#FAFAFA",
     "position": "bottom",
     "borderStyle": "white",
-    "backgroundColor": "#129912"
+    "backgroundColor": "#58AA56"
   },
   "debug":true
 }

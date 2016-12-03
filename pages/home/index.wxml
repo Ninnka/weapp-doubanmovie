@@ -1,17 +1,16 @@
 <!--pages/intheater/index.wxml-->
 <!--<text>pages/intheater/index.wxml</text>-->
 <view class="root">
-
-    <view class="home-title">
+    <!--<view class="home-title">
       豆瓣电影
-    </view>
+    </view>-->
     <view class="intheaters-banner-wrapper banner-wrapper">
       <view class="banner-guide">
         <text class="banner-title">正在热映</text>
         <text class="banner-more" catchtap="more" data-filmtype="intheaters">查看更多</text>
       </view>
       
-      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="3000" duration="1000">
 
             <swiper-item wx:for="{{inTheatersBannerItem}}">
               <view class="image-wrapper" catchtap="filmDetail" id="{{item[0].id}}">
@@ -37,7 +36,7 @@
         <text class="banner-more" catchtap="more" data-filmtype="comingsoon">查看更多</text>
       </view>
 
-      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="4500" duration="1500">
 
           <swiper-item wx:for="{{commingsoonBannerItem}}">
             <view class="image-wrapper" catchtap="filmDetail" id="{{item[0].id}}">

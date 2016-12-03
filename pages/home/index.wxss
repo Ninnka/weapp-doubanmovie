@@ -9,10 +9,13 @@
 .banner-wrapper{
     margin-bottom: 18px;
 }
+.banner-guide{
+    background: white;
+}
 swiper{
     height: 210px;
     font-size: 0px;
-    background: rgb(247, 247, 247);
+    background: rgb(240, 240, 240);
 }
 .swiper{
     font-size: 0px;

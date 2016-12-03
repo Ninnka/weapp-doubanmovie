@@ -1,0 +1,24 @@
+<!--pages/subject/index.wxml-->
+<view class="root">
+
+    <view class="header">
+        <view class="main-img-wrapper">
+            <image src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p511118051.jpg" class="main-img"></image>
+        </view>
+        <view class="main-desc-wrapper">
+            <view class="desc-title-wrapper">
+                <text class="desc-title">这个杀手不太冷</text>
+                <text class="desc-year">(1994)</text>
+            </view>
+            <view class="desc-director-wrapper">
+                <text class="desc-director"></text>
+            </view>
+            <view></view>
+        </view>
+    </view>
+
+    <view class="content"></view>
+
+    <view class="footer"></view>
+
+</view>
